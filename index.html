@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <form>
+    <form id="signUp">
       <p class="logo">PS</p>
 
       <div class="input-group">
@@ -21,7 +21,7 @@
 
       <div class="input-group">
         <label>Phone No.</label>
-        <input type="tel" placeholder="+91 98765 4321" id="vPhone" onkeyup="validatePhone()">
+        <input type="tel" placeholder="+91 98765 4321" id="vPhone" onchange="validatePhone()">
         <span id="phone-error"></span>
       </div>
 
@@ -36,6 +36,8 @@
         <input type="password" placeholder="Password" id="vPass" onkeyup="validatePass()">
         <span id="password-error"></span>
       </div>  
+      <span id="passwordConditions"></span>
+
 
       <div class="input-group">
         <label></label>
